@@ -1,0 +1,100 @@
+* {
+  box-sizing: border-box;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  clip: rect(0 0 0 0 );
+}
+
+form {
+  width: 437px;
+  padding: 44px 42px;
+}
+
+.heading {
+  font-family: 'Rubik';
+  font-weight: 500;
+  font-size: 26px;
+  line-height: 31px;
+  text-align: center;
+  color: #000000;
+}
+
+.form__custom + .form__custom {
+  margin-top: 18px;
+}
+
+input:checked + .form__custom>.form__custom-tennis {
+  background-image: url(./img/table-tennis.svg);
+  background-repeat: no-repeat;
+  background-size: 20px 22px;
+  background-position: calc(50%);
+
+}
+
+input:checked + .form__custom>.form__custom-basketbol {
+  background-image: url(./img/basketball-ball.svg);
+  background-repeat: no-repeat;
+  background-size: 20px 22px;
+  background-position: calc(50%);
+}
+
+input:checked + .form__custom>.form__custom-voleybol {
+  background-image: url(./img/volleyball-ball.svg);
+  background-repeat: no-repeat;
+  background-size: 20px 22px;
+  background-position: calc(50%);
+}
+
+input:checked + .form__custom>.form__custom-hokkey {
+  background-image: url(./img/hockey-puck.svg);
+  background-repeat: no-repeat;
+  background-size: 20px 22px;
+  background-position: calc(50%);
+}
+
+.form__custom {
+  display: flex;
+  align-items: center;
+  transition: all 0.4s;
+  padding-bottom: 18px;
+}
+
+.form__custom:hover {
+  opacity: 0.8;
+}
+
+.box {
+  width: 35px;
+  height: 35px;
+  padding: 5px 6px 6px 6px;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+.form__custom-title {
+  margin: 0;
+  padding: 0;
+  margin-left: 16px;
+  font-family: 'Rubik';
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 31px;
+  color: #000000;  
+}
+
+.form__custom--none {
+  opacity: 0.4;
+}
+
+.form__custom--none:hover {
+  opacity: 0.4;
+}
+
